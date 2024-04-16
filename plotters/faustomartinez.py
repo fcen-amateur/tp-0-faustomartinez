@@ -7,10 +7,10 @@ def plot():
         so.Plot(
             data=gapminder[gapminder.continent =="Americas"], 
             x="year", 
-            y="gdpPerCap"
+            y="gdpPercap"
         )
         .add(so.Lines(color="#bbca"),group="country")
-        .add(so.Line(),so.PolyFit(1))
+        .add(so.Line(color="blue"),data=gapminder[gapminder.country=="Argentina"],label="Argentina")
         .label(
             title="PBI per cápita en los paises americanos",
             x="Año",
