@@ -18,7 +18,7 @@ def plot():
         )
     )
     return dict(
-        descripcion="PBI per cápita estimado en América",
+        descripcion="PBI per cápita en América vs. en Argentina",
         autor="Fausto Martínez",
         figura=figura,
     )
